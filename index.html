@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walter J: Home</title>
+
+    <!-- CSS Libraries Go Here -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+
+    <!-- Custom CSS Libraries Go Here -->
+    <link rel="stylesheet" href="styles.css">
+  
+</head>
+<body>
+
+   <!-- Nav Bar --> 
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid">
+    
+        <!-- Brand Logo w/hyperlink back to Home: -->    
+            <a class="navbar-brand" href="index.html"></a>
+            <img src="images/W.png" alt="Logo" style="width:40px">
+
+        <!-- Hambuger Toggler -->    
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+        aria-controls="#navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+    <!-- Navbar Links -->    
+    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Home <span class="sr-only">Current</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="history.html">History</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="payment.html">Payments</a>
+                </li>
+
+        <!-- Navbar Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" 
+                    aria-haspopup="true" aria-expanded="false">
+                       Top Clients 
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="https://cdn.britannica.com/11/215011-050-3127A07E/American-actor-Keanu-Reeves-2014.jpg">Keanu Reeves</a> 
+                        <a class="dropdown-item" href="https://mckellen.com/profile.jpg">Sir Ian McKellen</a>
+                        <a class="dropdown-item" href="https://media.vanityfair.com/photos/659db304139f9e1eb96098c2/master/pass/Jodie-Foster.jpg">Jodie Foster</a>
+                    </div>
+                </li>
+              </ul>  
+
+            <!-- Navbar Search/Form -->
+                <form class="form-inline" action="/action_page.php">
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text">
+                            <img src="images/search.png" width="15px" height="15px"></span>
+                      </div>
+                      <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                  </form>
+                  </form>
+                </li>
+    </nav>
+
+    
+<!-- Header/Subtitle -->
+<h1 class="text-center">Walter J Esquire</h1>
+<h3 small class="text-muted text-center">The Best Lawyer the World has to Offer</h3>
+
+<!-- Cards w/ images and text -->
+<div class="container">
+    <div class="card-deck" style="text-align: center;">
+      <div class="card">
+        <img class="card-img-top" src="images/wmain1.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title" style="font-weight: bold;">This is Walter</h5>
+          <p class="card-text">He is best. Top dog lawyer in United State.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="images/casual.JPEG"Card image cap">
+        <div class="card-body">
+          <h5 class="card-title" style="font-weight: bold;">Casual Walter</h5>
+          <p class="card-text">When needing to blend in with the ordinary.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="images/proper1.JPEG" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title" style="font-weight: bold;">Prestigious Walter</h5>
+          <p class="card-text">For more expensive jobs with more expensive people.</p>
+        </div>
+      </div>
+    </div>
+</div>
+  <br>
+
+<!-- Main Home Page Content -->
+  <div class="container bg-dark text-light" style="border-radius: 10px;">
+    <p class="home-text"> Walter has been catching criminals in lies for all of his life. In some of his most high profile cases,
+        he has gotten the book thrown at lies such as "do you want to go for a walk" and then a walk does not occur;
+        "do you want to..." with no ending to the sentence as though just a rabble-ruse to get someone excited for no reason;
+        and "shake" when fully expecting fair compensation for said shake only to find there is no compensation at all.
+    </p>
+    <p class="home-text"> If you've been wronged by any sort of tom-foolery or dishonest character, Walter is your go-to for peace and fairness.
+        The tools Walter uses to sniff out the truth can feel unorthodox and, at times, morally reprehensible, but rest assured
+        Walter will get you the compensation you deserve for your discomfort.  
+    </p>
+  </div>
+
+  <!-- Button to Open the Modal -->
+    <div class="modal-button">
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+        Contact
+    </button><br>
+  </div>
+      
+      <!-- The Modal -->
+      <div class="modal" id="myModal">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+      
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">You do not contact Walter.</h4>
+              <button type="button" class="close" data-dismiss="modal"></button>
+            </div>
+      
+            <!-- Modal body -->
+            <div class="modal-body">
+              Walter contacts you.
+            </div>
+      
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+      
+          </div>
+        </div>
+      </div>
+
+      <!-- JS Libraries Go Here -->
+      <script src="node_modules/jquery/dist/jquery.min.js" ></script>
+      <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+      <!-- Custom JS Libraries Go Here -->
+  
+</body>
+</html>
+
+button.btn.btn-primary {
+  color: red;
+}

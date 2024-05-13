@@ -1,0 +1,31 @@
+*{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    margin-bottom: 10px;
+}
+
+.modal-button {
+    text-align: center;
+}
+
+.home-text {
+    padding: 15px;
+}
+
+.payment-form {
+    padding: 20px;
+}
+
+#maidenHelp {
+    font-style: italic;
+}
+
+#socialHelp {
+    font-style: italic;
+}
+
+#creditHelp {
+    font-style: italic;
+}

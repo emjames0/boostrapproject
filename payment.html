@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walter J: Payment</title>
+    <!-- CSS Libraries Go Here -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+
+    <!-- Custom CSS Libraries Go Here -->
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+<!-- Nav Bar --> 
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="container-fluid">
+
+    <!-- Brand Logo w/hyperlink back to Home: -->    
+        <a class="navbar-brand" href="index.html"></a>
+        <img src="images/W.png" alt="Logo" style="width:40px">
+
+    <!-- Hambuger Toggler -->    
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+    aria-controls="#navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+<!-- Navbar Links -->    
+<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">Current</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="history.html">History</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="payment.html">Payments</a>
+            </li>
+
+    <!-- Navbar Dropdown -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" 
+                aria-haspopup="true" aria-expanded="false">
+                   Top Clients 
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="https://cdn.britannica.com/11/215011-050-3127A07E/American-actor-Keanu-Reeves-2014.jpg">Keanu Reeves</a> 
+                    <a class="dropdown-item" href="https://mckellen.com/profile.jpg">Sir Ian McKellen</a>
+                    <a class="dropdown-item" href="https://media.vanityfair.com/photos/659db304139f9e1eb96098c2/master/pass/Jodie-Foster.jpg">Jodie Foster</a>
+                </div>
+            </li>
+          </ul>  
+
+        <!-- Navbar Search/Form -->
+            <form class="form-inline" action="/action_page.php">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">
+                        <img src="images/search.png" width="15px" height="15px"></span>
+                  </div>
+                  <input type="text" class="form-control" placeholder="Search">
+                </div>
+              </form>
+              </form>
+            </li>
+</nav>
+
+<!-- Payment Form -->
+<div class="container">
+    <div class="payment-form">
+    <form>
+        <div class="mb-3">
+            <label for="InputMaiden" class="form-label">Mother's Maiden Name</label>
+            <input type="text" class="form-control" id="InputMaiden" aria-describedby="maidenHelp">
+            <div id="maidenHelp" class="form-text text-secondary">Please do not actually put this in.</div>
+        </div>
+        <div class="mb-3">
+            <label for="socialSecurity" class="form-label">Social Security Number</label>
+            <input type="text" class="form-control" id="socialSecurity" aria-describedby="socialHelp">
+            <div id="socialHelp" class="form-text text-secondary">Please really, really do not put this in.</div>
+        </div>
+        <div class="mb-3">
+            <label for="InputCreditCard" class="form-label">All Your Credit Card Information</label>
+            <input type="credit-card" class="form-control" id="creditCard" aria-describedby="creditHelp">
+            <div id="creditHelp" class="form-text text-secondary">This will be used for fair compensation.</div>
+        </div>
+        <br>
+
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">You agree to terms and conditions of which I have set and will enforce at a later time.</label>
+        </div>
+        <br>
+            <button type="submit" class="btn btn-primary">Pay Now</button>
+    </form>
+</div>
+</div>
+    
+ <!-- JS Libraries Go Here -->
+ <script src="node_modules/jquery/dist/jquery.min.js" ></script>
+ <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+ <!-- Custom JS Libraries Go Here -->
+
+</body>
+</html>
